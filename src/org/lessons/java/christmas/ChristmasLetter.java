@@ -11,10 +11,10 @@ public class ChristmasLetter {
         private List<String> wishList;
 
     //CONSTRUCTORS
-        public ChristmasLetter(String sender, String address, List wishList){
+        public ChristmasLetter(String sender, String address, List<String>  wishList){
             this.sender = sender;
             this.address = address;
-            this.wishList = this.wishList;
+            this.wishList = wishList;
         }
 
     //GETTER & SETTER
@@ -69,10 +69,10 @@ public class ChristmasLetter {
                 String status;
                 if (GoodOrNot == 1){
                     status = "good";
-                    System.out.println(toString() + "Congrats, you are: " + status + "guy");
+                    System.out.println(toString() + "Congrats, you are a " + status + " guy");
                 }else {
                     status = "bad";
-                    throw new WishListException("Sorry, you are: " + status + "guy");
+                    throw new WishListException("Sorry, you are a " + status + " guy");
                 }
         }
 }
