@@ -5,7 +5,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) throws WishListException {
 
-        /*        creare una List<String> dove salvare la lista dei desideri per Natale.
+        /*creare una List<String> dove salvare la lista dei desideri per Natale.
         Continuare a chiedere all’utente di inserire un nuovo desiderio nella lista, fino a che l’utente sceglie di fermarsi.
         Ad ogni iterazione mostrare quanti desideri sono già stati espressi e chiedere all’utente se vuole continuare o fermarsi.
         Aggiungere ciascun desiderio alla lista. Al termine dell’inserimento stampare a video la lista ordinata*/
@@ -40,5 +40,6 @@ public class Main {
             System.out.println(e.getMessage());
         }
 
+        scan.close();
     }
 }
